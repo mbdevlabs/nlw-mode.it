@@ -18,9 +18,6 @@
 
 <br>
 
-<p align="center">
-  <img alt="Happy" src=".github/moveit.png" width="100%">
-</p>
 
 ## 💻 Next Level Week 04
 
@@ -43,6 +40,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O move.it é um app que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.
+
+
+https://github.com/mbrenodev/nlw-mode.it/assets/46978490/3904be3e-4b56-492d-8aee-1284334749fc
+
 
 
 ## 🚀 Como executar
