@@ -12,52 +12,90 @@
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
-
- <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
+  <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
 </p>
 
 <br>
 
+## 💡 Next Level Week 04
 
-## 💻 Next Level Week 04
+A **Next Level Week #04 (NLW)** é uma semana prática promovida pela [Rocketseat](https://rocketseat.com.br/formacao/fullstack) com muito código, desafios, networking e aprendizado intensivo.
 
-A Next Level Week - ReactJS é uma semana prática com muito código, desafios, networking com o único objetivo de elevar níveis.
+Durante o evento, desenvolvemos o **move.it**, uma aplicação web que une a técnica de Pomodoro com a prática de exercícios físicos — ideal para quem passa muitas horas sentado na frente do computador.
 
-O Foco aqui é compartilhar e absolver conteúdo para aprender novas ferramentas, conhecer novas tecnologias e descobrir hacks para dar aquele UP na carreira, Ah! e não podemos esquercer muita, muita prática!!!
+Este projeto foi conduzido pelo instrutor [Diego Fernandes](https://github.com/diego3g).
 
-Este projeto foi ministrado pelo [Diego Fernandes](https://github.com/diego3g 'Diego Fernandes').
-
-[Rocketseat](https://rocketseat.com.br/ 'Rocketseat')
+---
 
 ## ✨ Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React](https://reactjs.org)
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [js-cookie](https://github.com/js-cookie/js-cookie)
 
-## 💻 Projeto
+---
 
-O move.it é um app que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.
+## 📱 Projeto
 
+O **move.it** é um app de produtividade com gamificação que:
+
+- Utiliza a técnica de Pomodoro para dividir o tempo em ciclos de foco
+- Estimula pausas ativas com desafios físicos e mentais
+- Traz elementos de XP e níveis para manter o usuário engajado
+
+### 🎥 Demonstração:
 
 https://github.com/mbrenodev/nlw-mode.it/assets/46978490/3904be3e-4b56-492d-8aee-1284334749fc
 
-
+---
 
 ## 🚀 Como executar
 
-- Clone o repositório
-- Instale as dependências com `yarn`
-- Inicie o servidor com `yarn dev`
+### Pré-requisitos
 
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+- Node.js (recomendado: v18 ou superior)
+- Gerenciador de pacotes: `npm` ou `yarn`
 
-## 📄 Licença
+### Passos para rodar localmente:
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+```bash
+# Clone o repositório
+git clone https://github.com/mbrenodev/moveit-next.git
 
+# Acesse a pasta do projeto
+cd moveit-next
 
-Feito com ♥ by Márcio Breno 👋🏻
+# Instale as dependências
+npm install
+# ou
+yarn
 
+# Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
+```
+
+A aplicação estará disponível em: http://localhost:3000
+
+---
+
+### 📦 Scripts disponíveis
+
+    dev – Inicia o servidor Next.js em modo desenvolvimento
+
+    build – Cria o build de produção
+
+    start – Inicia o servidor Next.js com o build de produção
+
+---
+
+### 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+
+Feito com ♥ por Márcio Breno 👋🏻
+[LinkedIn](https://www.linkedin.com/in/mbrenodev/)
