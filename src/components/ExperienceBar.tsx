@@ -1,13 +1,16 @@
-import { useContext } from 'react'
-import { ChallengesContext } from '../contexts/ChallengesContext'
-import styles from '../styles/components/ExperienceBar.module.css'
+'use-clint';
+
+import { useContext } from 'react';
+
+import { ChallengesContext } from '../contexts/ChallengesContext';
+import styles from '../styles/components/ExperienceBar.module.css';
 
 export function ExperienceBar() {
   const { currentExperience, experienceToNextLevel } =
-    useContext(ChallengesContext)
+    useContext(ChallengesContext);
 
   const percentToNextLevel =
-    Math.round(currentExperience * 100) / experienceToNextLevel
+    Math.round(currentExperience * 100) / experienceToNextLevel;
 
   return (
     <header className={styles.experienceBar}>
@@ -23,5 +26,5 @@ export function ExperienceBar() {
       </div>
       <span>{experienceToNextLevel} Xp</span>
     </header>
-  )
+  );
 }
