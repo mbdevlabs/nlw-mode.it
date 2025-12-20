@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+build
+dist
+*.config.js
+*.config.mjs
+.yarn
+.pnp
+coverage
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
