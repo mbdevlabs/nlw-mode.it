@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import { getServerSession } from 'next-auth';
 import { signIn } from 'next-auth/react';
-import Head from 'next/head';
 
 import styles from '../styles/pages/Login.module.css';
 import { authOptions } from './api/auth/[...nextauth]';

@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next';
-import { getServerSession } from 'next-auth';
 import Head from 'next/head';
+import { getServerSession } from 'next-auth';
 import { useState } from 'react';
 
 import { ChallengeBox } from '../components/ChallengeBox';

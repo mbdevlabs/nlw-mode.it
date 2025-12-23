@@ -1,5 +1,5 @@
-import { useContext } from 'react';
 import { signOut } from 'next-auth/react';
+import { useContext } from 'react';
 
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import { useTheme } from '../contexts/ThemeContext';

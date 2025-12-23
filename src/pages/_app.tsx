@@ -1,7 +1,9 @@
-import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
-import { ThemeProvider } from '../contexts/ThemeContext';
+
 import { NotificationProvider } from '../contexts/NotificationContext';
+import { ThemeProvider } from '../contexts/ThemeContext';
+
+import type { AppProps } from 'next/app';
 import '../styles/global.css';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
