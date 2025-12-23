@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { signOut } from 'next-auth/react';
 
 import { ChallengesContext } from '../contexts/ChallengesContext';
+import { useTheme } from '../contexts/ThemeContext';
 import styles from '../styles/components/Profile.module.css';
 
 interface ProfileProps {
@@ -12,6 +13,7 @@ interface ProfileProps {
 
 export function Profile({ name, avatar, username }: ProfileProps) {
   const { level } = useContext(ChallengesContext);
+  const { theme, toggleTheme } = useTheme();
 
   const displayName = name || username || 'User';
   const avatarUrl = avatar || 'https://github.com/github.png';
@@ -32,6 +34,17 @@ export function Profile({ name, avatar, username }: ProfileProps) {
           Level {level}
         </p>
       </div>
+      <button
+        type="button"
+        onClick={toggleTheme}
+        className={styles.themeToggle}
+        title={theme === 'light' ? 'Ativar tema escuro' : 'Ativar tema claro'}
+      >
+        <img
+          src={theme === 'light' ? '/icons/moon.svg' : '/icons/sun.svg'}
+          alt="Toggle theme"
+        />
+      </button>
       <button
         type="button"
         onClick={handleSignOut}

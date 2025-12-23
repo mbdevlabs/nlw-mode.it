@@ -5,6 +5,7 @@
 }
 
 :root {
+  /* Light Theme (default) */
   --white: #fff;
   --background: #f2f3f5;
   --gray-line: #dcdde0;
@@ -16,6 +17,31 @@
   --blue: #5965e0;
   --blue-dark: #4953b8;
   --blue-twitter: #2aa9e0;
+
+  /* Shadow colors */
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+  --overlay: rgba(242, 243, 245, 0.8);
+}
+
+.dark {
+  /* Dark Theme */
+  --white: #1e1e1e;
+  --background: #121214;
+  --gray-line: #2a2a2c;
+  --text: #c4c4cc;
+  --text-highligth: #8b93ff;
+  --title: #e1e1e6;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #6c77e8;
+  --blue-dark: #5965e0;
+  --blue-twitter: #2aa9e0;
+
+  /* Shadow colors */
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.5);
+  --overlay: rgba(18, 18, 20, 0.9);
 }
 
 body {
