@@ -1,12 +1,14 @@
 import { GetServerSideProps } from 'next';
 import { getServerSession } from 'next-auth';
 import Head from 'next/head';
+import { useState } from 'react';
 
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
+import { SettingsModal } from '../components/SettingsModal';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { authOptions } from './api/auth/[...nextauth]';
@@ -24,6 +26,16 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+
+  function handleOpenSettings() {
+    setIsSettingsModalOpen(true);
+  }
+
+  function handleCloseSettings() {
+    setIsSettingsModalOpen(false);
+  }
+
   return (
     <ChallengesProvider
       level={props.level}
@@ -33,9 +45,13 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Mode - it</title>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"
+          />
         </Head>
 
-        <ExperienceBar />
+        <ExperienceBar onSettingsClick={handleOpenSettings} />
 
         <CountdownProvider>
           <section className={styles.sectionGroup}>
@@ -53,6 +69,10 @@ export default function Home(props: HomeProps) {
             </div>
           </section>
         </CountdownProvider>
+
+        {isSettingsModalOpen && (
+          <SettingsModal onClose={handleCloseSettings} />
+        )}
       </div>
     </ChallengesProvider>
   );

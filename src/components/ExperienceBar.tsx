@@ -1,11 +1,15 @@
-'use-clint';
+'use client';
 
 import { useContext } from 'react';
 
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/ExperienceBar.module.css';
 
-export function ExperienceBar() {
+interface ExperienceBarProps {
+  onSettingsClick?: () => void;
+}
+
+export function ExperienceBar({ onSettingsClick }: ExperienceBarProps) {
   const { currentExperience, experienceToNextLevel } =
     useContext(ChallengesContext);
 
@@ -25,6 +29,16 @@ export function ExperienceBar() {
         </span>
       </div>
       <span>{experienceToNextLevel} Xp</span>
+      {onSettingsClick && (
+        <button
+          className={styles.settingsButton}
+          onClick={onSettingsClick}
+          title="Configurações de Notificação"
+          aria-label="Abrir configurações de notificação"
+        >
+          <img src="/icons/settings.svg" alt="" />
+        </button>
+      )}
     </header>
   );
 }

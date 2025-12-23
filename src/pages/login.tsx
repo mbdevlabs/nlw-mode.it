@@ -3,8 +3,8 @@ import { getServerSession } from 'next-auth';
 import { signIn } from 'next-auth/react';
 import Head from 'next/head';
 
-import { authOptions } from './api/auth/[...nextauth]';
 import styles from '../styles/pages/Login.module.css';
+import { authOptions } from './api/auth/[...nextauth]';
 
 export default function Login() {
   async function handleSignIn() {

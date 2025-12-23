@@ -1,0 +1,41 @@
+{
+  "name": "Move.it - Pomodoro com Desafios",
+  "short_name": "Move.it",
+  "description": "Aplicativo Pomodoro que combina técnica de produtividade com exercícios físicos. Concentre-se, complete desafios e cuide da sua saúde!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#5965e0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-full.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "health", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Iniciar Ciclo",
+      "short_name": "Iniciar",
+      "description": "Iniciar um novo ciclo Pomodoro",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/logo-full.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

@@ -1,6 +1,7 @@
 .experienceBar {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .experienceBar span {
@@ -26,4 +27,36 @@ span.currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
+}
+
+.settingsButton {
+  background: transparent;
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.settingsButton img {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.settingsButton:hover {
+  background: var(--gray-line);
+}
+
+.settingsButton:hover img {
+  opacity: 1;
+}
+
+.settingsButton:active {
+  transform: scale(0.95);
 }
