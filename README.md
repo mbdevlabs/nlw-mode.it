@@ -74,6 +74,34 @@ O **move.it** é um app de produtividade com gamificação que:
 
 https://github.com/mbrenodev/nlw-mode.it/assets/46978490/3904be3e-4b56-492d-8aee-1284334749fc
 
+### 📸 Screenshots:
+
+<div align="center">
+
+#### 🔐 Página de Login
+
+![Login Page](.github/login.png)
+
+*Faça login com sua conta do GitHub para começar a usar o move.it*
+
+---
+
+#### 🎮 Interface Principal
+
+![Main Interface](.github/moveit.png)
+
+*Interface principal com timer Pomodoro, desafios e sistema de XP*
+
+---
+
+#### ⚙️ Configurações de Notificação
+
+![Settings Modal](.github/settings.png)
+
+*Modal de configurações com opções de som, notificações e vibração*
+
+</div>
+
 ---
 
 ## 🚀 Como executar
