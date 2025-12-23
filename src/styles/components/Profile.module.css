@@ -1,6 +1,7 @@
 .profileContainer {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .profileContainer > img {
@@ -11,6 +12,7 @@
 
 .profileContainer div {
   margin-left: 1.5rem;
+  flex: 1;
 }
 
 .profileContainer div strong {
@@ -26,4 +28,25 @@
 
 .profileContainer div img {
   margin-right: 0.5rem;
+}
+
+.signOutButton {
+  background: transparent;
+  border: 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.signOutButton:hover {
+  background: var(--gray-line);
+}
+
+.signOutButton img {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
 }
