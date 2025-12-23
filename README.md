@@ -16,6 +16,19 @@
   <img src="https://github.com/mbrenodev/nlw-mode.it/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
 </p>
 
+<p align="center">
+  <a href="https://moveit-mbreno.vercel.app" target="_blank">
+    <img alt="Demo" src="https://img.shields.io/badge/🚀_Demo-Online-5965e0?style=for-the-badge">
+  </a>
+</p>
+
+<p align="center">
+  <b>🌐 Aplicação em Produção:</b>
+  <a href="https://moveit-mbreno.vercel.app" target="_blank">
+    https://moveit-mbreno.vercel.app
+  </a>
+</p>
+
 <br>
 
 ## 💡 Next Level Week 04
@@ -73,34 +86,6 @@ O **move.it** é um app de produtividade com gamificação que:
 ### 🎥 Demonstração:
 
 https://github.com/mbrenodev/nlw-mode.it/assets/46978490/3904be3e-4b56-492d-8aee-1284334749fc
-
-### 📸 Screenshots:
-
-<div align="center">
-
-#### 🔐 Página de Login
-
-![Login Page](.github/login.png)
-
-*Faça login com sua conta do GitHub para começar a usar o move.it*
-
----
-
-#### 🎮 Interface Principal
-
-![Main Interface](.github/moveit.png)
-
-*Interface principal com timer Pomodoro, desafios e sistema de XP*
-
----
-
-#### ⚙️ Configurações de Notificação
-
-![Settings Modal](.github/settings.png)
-
-*Modal de configurações com opções de som, notificações e vibração*
-
-</div>
 
 ---
 
@@ -191,15 +176,15 @@ A aplicação estará disponível em: **http://localhost:3000**
 
 ### 📦 Scripts disponíveis
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Inicia o servidor Next.js em modo desenvolvimento |
-| `npm run build` | Cria o build de produção |
-| `npm start` | Inicia o servidor Next.js com o build de produção |
-| `npm run lint` | Executa o ESLint para verificar problemas no código |
-| `npm run lint:fix` | Executa o ESLint e corrige problemas automaticamente |
-| `npm run format` | Formata o código usando Prettier |
-| `npm run format:check` | Verifica se o código está formatado corretamente |
+| Comando                | Descrição                                            |
+| ---------------------- | ---------------------------------------------------- |
+| `npm run dev`          | Inicia o servidor Next.js em modo desenvolvimento    |
+| `npm run build`        | Cria o build de produção                             |
+| `npm start`            | Inicia o servidor Next.js com o build de produção    |
+| `npm run lint`         | Executa o ESLint para verificar problemas no código  |
+| `npm run lint:fix`     | Executa o ESLint e corrige problemas automaticamente |
+| `npm run format`       | Formata o código usando Prettier                     |
+| `npm run format:check` | Verifica se o código está formatado corretamente     |
 
 ### 🔄 CI/CD
 
@@ -212,6 +197,7 @@ O projeto possui integração contínua configurada com GitHub Actions que:
 - ✅ Armazena artefatos do build por 7 dias
 
 O workflow é executado automaticamente em:
+
 - Push nas branches `main` e `develop`
 - Pull requests para `main` e `develop`
 

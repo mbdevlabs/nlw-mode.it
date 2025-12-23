@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 
 interface ThemeContextData {
   theme: 'light' | 'dark';
@@ -22,7 +28,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       setTheme(savedTheme);
     } else {
       // Detectar preferência do sistema
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)',
+      ).matches;
       setTheme(prefersDark ? 'dark' : 'light');
     }
   }, []);

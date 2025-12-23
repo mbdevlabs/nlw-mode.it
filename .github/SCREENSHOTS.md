@@ -5,15 +5,18 @@ Para completar a documentação do README, adicione os seguintes screenshots na 
 ## Screenshots Necessários:
 
 ### 1. `login.png` - Página de Login
+
 - Acesse: http://localhost:3000/login
 - Tire um screenshot da página inteira
 - Salve como: `.github/login.png`
 - **Dimensões sugeridas:** 1920x1080 ou similar
 
 ### 2. `moveit.png` - Interface Principal (já existe ✅)
+
 - Este arquivo já está presente
 
 ### 3. `settings.png` - Modal de Configurações
+
 - Acesse: http://localhost:3000
 - Faça login
 - Clique no ícone de engrenagem (⚙️) na ExperienceBar
@@ -24,20 +27,24 @@ Para completar a documentação do README, adicione os seguintes screenshots na 
 ## Opcional - Adicione mais screenshots:
 
 ### 4. `challenge.png` - Tela de Desafio
+
 - Quando aparecer um desafio após o countdown
 - Screenshot da tela com o desafio ativo
 
 ### 5. `levelup.png` - Modal de Level Up
+
 - Quando você subir de nível
 - Screenshot do modal de celebração
 
 ### 6. `mobile.png` - Versão Mobile
+
 - Abra o DevTools (F12)
 - Modo responsivo (Ctrl+Shift+M)
 - Selecione um dispositivo mobile
 - Tire screenshot
 
 ### 7. `dark-mode.png` - Tema Escuro
+
 - Ative o dark mode
 - Tire screenshot da interface
 

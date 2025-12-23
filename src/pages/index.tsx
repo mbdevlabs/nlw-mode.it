@@ -70,9 +70,7 @@ export default function Home(props: HomeProps) {
           </section>
         </CountdownProvider>
 
-        {isSettingsModalOpen && (
-          <SettingsModal onClose={handleCloseSettings} />
-        )}
+        {isSettingsModalOpen && <SettingsModal onClose={handleCloseSettings} />}
       </div>
     </ChallengesProvider>
   );

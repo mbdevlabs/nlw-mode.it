@@ -29,10 +29,7 @@ export default class MyDocument extends Document {
 
           {/* Theme color */}
           <meta name="theme-color" content="#5965e0" />
-          <meta
-            name="msapplication-TileColor"
-            content="#5965e0"
-          />
+          <meta name="msapplication-TileColor" content="#5965e0" />
 
           {/* Apple Touch Icons */}
           <link rel="apple-touch-icon" href="/logo-full.svg" />

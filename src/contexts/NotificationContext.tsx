@@ -43,9 +43,7 @@ interface NotificationProviderProps {
   children: ReactNode;
 }
 
-export function NotificationProvider({
-  children,
-}: NotificationProviderProps) {
+export function NotificationProvider({ children }: NotificationProviderProps) {
   const [settings, setSettings] = useState<NotificationSettings>({
     soundEnabled: true,
     notificationsEnabled: true,

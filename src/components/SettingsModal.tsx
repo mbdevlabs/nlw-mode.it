@@ -157,7 +157,10 @@ export function SettingsModal({ onClose }: SettingsModalProps) {
                 type="checkbox"
                 checked={settings.progressNotificationsEnabled}
                 onChange={(e) =>
-                  updateSetting('progressNotificationsEnabled', e.target.checked)
+                  updateSetting(
+                    'progressNotificationsEnabled',
+                    e.target.checked,
+                  )
                 }
               />
               <span>Notificar em 50%, 75% e 90% do timer</span>
