@@ -138,15 +138,23 @@ GITHUB_SECRET=seu-github-client-secret
 openssl rand -base64 32
 ```
 
-4. **Configure o GitHub OAuth App:**
+4. **Configure o GitHub OAuth App (DESENVOLVIMENTO):**
+
+   ⚠️ **IMPORTANTE:** Você precisa criar **2 GitHub OAuth Apps separados**:
+   - 🏠 Um para **desenvolvimento local** (http://localhost:3000)
+   - 🌐 Um para **produção** (https://moveit-mbreno.vercel.app)
+
+   **Para Desenvolvimento Local:**
    - Acesse: https://github.com/settings/developers
    - Clique em "New OAuth App"
    - Preencha:
-     - **Application name:** Move.it Local
+     - **Application name:** `Move.it (Local Development)`
      - **Homepage URL:** `http://localhost:3000`
      - **Authorization callback URL:** `http://localhost:3000/api/auth/callback/github`
    - Copie o **Client ID** e gere um **Client Secret**
    - Cole os valores no arquivo `.env.local`
+
+   📖 **[Guia Completo de Configuração OAuth](.github/OAUTH_SETUP.md)**
 
 5. **Inicie o servidor de desenvolvimento:**
 
@@ -160,17 +168,30 @@ A aplicação estará disponível em: **http://localhost:3000**
 
 ### 🌐 Deploy para Produção (Vercel)
 
-1. **Configure as variáveis de ambiente no Vercel:**
-   - `NEXTAUTH_URL=https://seu-dominio.vercel.app`
-   - `NEXTAUTH_SECRET=seu-secret-de-producao`
-   - `GITHUB_ID=seu-github-client-id`
-   - `GITHUB_SECRET=seu-github-client-secret`
+1. **Crie um GitHub OAuth App para PRODUÇÃO:**
+   - Acesse: https://github.com/settings/developers
+   - Clique em "New OAuth App"
+   - Preencha:
+     - **Application name:** `Move.it (Production)`
+     - **Homepage URL:** `https://moveit-mbreno.vercel.app`
+     - **Authorization callback URL:** `https://moveit-mbreno.vercel.app/api/auth/callback/github`
+   - Copie o **Client ID** e gere um **Client Secret**
 
-2. **Adicione o callback de produção no GitHub OAuth App:**
-   - `https://seu-dominio.vercel.app/api/auth/callback/github`
+2. **Configure as variáveis de ambiente no Vercel:**
+   - Acesse: https://vercel.com/seu-usuario/moveit-mbreno/settings/environment-variables
+   - Adicione:
+     - `NEXTAUTH_URL=https://moveit-mbreno.vercel.app`
+     - `NEXTAUTH_SECRET=<novo-secret-diferente-do-dev>`
+     - `GITHUB_ID=<client-id-do-app-de-producao>`
+     - `GITHUB_SECRET=<client-secret-do-app-de-producao>`
 
 3. **Deploy:**
    - O Vercel faz deploy automático ao fazer push no repositório
+   - Ou force um redeploy no dashboard do Vercel
+
+⚠️ **Use credenciais DIFERENTES entre desenvolvimento e produção!**
+
+📖 **[Guia Detalhado de Configuração OAuth](.github/OAUTH_SETUP.md)**
 
 ---
 
