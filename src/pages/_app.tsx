@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SessionProvider } from 'next-auth/react';
 
 import { NotificationProvider } from '../contexts/NotificationContext';
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       <NotificationProvider>
         <SessionProvider session={session}>
           <Component {...pageProps} />
+          <SpeedInsights />
         </SessionProvider>
       </NotificationProvider>
     </ThemeProvider>
